@@ -1,0 +1,22 @@
+[workspace]
+channels = ["https://prefix.dev/conda-forge"]
+preview = ["pixi-build"]
+
+[package]
+version = "0.18.2.dev0"
+
+[package.build.backend]
+name = "pixi-build-python"
+version = "*"
+
+[package.host-dependencies]
+setuptools = "*"
+
+[package.run-dependencies]
+cxx-compiler = "*"
+decorator = "*"
+gast = "0.6.*"
+ply = "*"
+colorlog = "*"
+beniget = "0.4.*"
+numpy = "*"
